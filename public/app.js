@@ -20,10 +20,12 @@ const app = new Vue({
           slug: this.slug || undefined,
         }),
       });
+      console.log(response);
       if (response.ok) {
         const result = await response.json();
+        console.log(result);
         this.formVisible = false;
-        this.created = `https://cdg.sh/${result.slug}`;
+        this.created = `http://locathost:1337/${result.slug}`;
       } else if (response.status === 429) {
         this.error = 'You are sending too many requests. Try again in 30 seconds.';
       } else {

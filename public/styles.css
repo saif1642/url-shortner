@@ -24,10 +24,7 @@ header {
   margin-bottom: 3rem;
 }
 
-.logo {
-  max-width: 90%;
-  image-rendering: -moz-crisp-edges;
-}
+
 
 .error {
   background: #A63446;
@@ -61,15 +58,7 @@ header {
   caret-color: #56BC58;
 }
 
-.input:focus {
-  outline: none;
-  border-bottom-color: #56BC58;
-}
 
-.input::placeholder {
-  color: #ffffff;
-  opacity: 0.7;
-}
 
 .create {
   cursor: pointer;
